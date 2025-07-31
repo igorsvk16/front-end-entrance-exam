@@ -8,29 +8,40 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <div class="main-container">
+   <div class="top-bar">
+    <button id="downloadPdf" class="download-btn ripple-btn">
+      Download PDF
+    </button>
+  </div>
   <div class="resume-container">
+    
     <header>
       <div class="header-left">
-        <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-pic" />
+        <img src="img/IMG_3902.jpg" alt="Profile Picture" class="profile-pic" />
         <div class="intro">
-          <p class="hello-text">Hello 👋 I'm</p>
-          <h1 class="name" contenteditable="true">Karthik SR</h1>
-          <h2 class="position" contenteditable="true">UX/UI Designer</h2>
-          <button id="downloadPdf" class="btn ripple-btn">Download PDF</button>
+          <div class="intro-upper">
+            <p class="hello-text">Hello 👋 I'm</p>
+          </div>
+          <div class="intro-footer">
+            <h1 class="name" contenteditable="true">Karthik SR</h1>
+           <h2 class="position" contenteditable="true">UX/UI Designer</h2>
+          </div>
+          
         </div>
-      </div>
-      <div class="languages-card">
+              <div class="languages-card">
         <h3>Languages</h3>
+        <div class="languages">
         <div class="language">
           <span class="lang-name" contenteditable="true">English</span>
           <div class="lang-bar">
-            <div class="lang-bar-fill" style="width: 90%;"></div>
+            <div class="lang-bar-fill" style="width: 100%;"></div>
           </div>
         </div>
         <div class="language">
           <span class="lang-name" contenteditable="true">Malayalam</span>
           <div class="lang-bar">
-            <div class="lang-bar-fill" style="width: 70%;"></div>
+            <div class="lang-bar-fill" style="width: 100%;"></div>
           </div>
         </div>
         <div class="language">
@@ -39,7 +50,10 @@
             <div class="lang-bar-fill" style="width: 60%;"></div>
           </div>
         </div>
+        </div>
       </div>
+      </div>
+
     </header>
     <main>
       <div class="col-left">
@@ -152,6 +166,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
   <script src="js/resume.js"></script>
   <script src="js/main.js"></script>
+</div>
 </body>
 </html>
  

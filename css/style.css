@@ -1,11 +1,19 @@
-/* style.css */
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  background: #f0f0f0;
+  background: #ffffff;
   font-family: 'Poppins', sans-serif;
-  color: #333;
+}
+.main-container {
+  width: 555px;
+  height: 812px;
+  margin: 0 auto;
+  gap: 20px;
 }
 .resume-container {
+  position:relative;
   max-width: 1040px;
   margin: 0 auto;
   padding: 20px;
@@ -19,80 +27,118 @@ header {
 .header-left {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 .profile-pic {
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;
+  width: 124px;
+  height: 124px;
+  border-radius: 12px;
   object-fit: cover;
   margin-right: 20px;
+  margin: 0;
 }
 .intro {
-  background: #f9f9f9;
-  border-radius: 8px;
-  padding: 20px;
+  width: 124px;
+  height: 124px;
+  border-radius: 12px;
+  padding: 12px;
+  background: #F0F0F0;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .intro .hello-text {
+  font-size: 10px;
+  font-weight: 500;
   margin: 0;
-  font-size: 1.1em;
 }
-.intro .name {
-  margin: 5px 0 0 0;
-  font-size: 1.5em;
-  font-weight: 700;
-}
-.intro .position {
-  margin: 5px 0;
-  font-weight: 400;
-  color: #555;
-}
-.btn {
-  background: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
+.name {
   font-weight: 600;
-  font-size: 1em;
+  font-size: 14px;
 }
-.btn:active {
-  transform: scale(0.98);
+.position {
+  font-weight: 500;
+  font-size: 12px;
 }
+/* верхняя полоса на всю ширину */
+.top-bar{
+  width:100%;
+  padding:12px 24px;          /* высота полосы */
+  background:#ffffff;         /* фон (можешь поменять) */
+  display:flex;
+  justify-content:center;   /* кнопка прижата вправо */
+  align-items:center;
+
+  z-index:100;                /* поверх всего */
+  box-shadow:0 1px 4px rgba(0,0,0,.08);
+}
+
+/* сама кнопка */
+.download-btn{
+  background:#28D979;
+  color:#fff;
+  border:none;
+  padding:8px 20px;
+  font-size:14px;
+  font-weight:600;
+  border-radius:6px;
+  cursor:pointer;
+}
+.download-btn:active{transform:scale(.97);}
+
+
 .languages-card {
-  background: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  width: 220px;
+  width: 267px;
+  height: 124px;
+  background: #F0F0F0;
+  border-radius: 12px;
+  padding: 12px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
 }
 .languages-card h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  gap: 25px;
+  margin: 0;
+}
+.languages {
+  gap: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
 .language {
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  height: 6px;
+  gap: 40px;
+  font-weight: 500;
+  font-size: 100px;
 }
 .lang-name {
-  display: inline-block;
-  width: 100px;
-  font-weight: 500;
+   flex: 0 0 80px;     /* фикс. ширина подписи (подгоняй при желании) */
+   font-size: 10px;
+   font-weight: 500;
 }
 .lang-bar {
   display: inline-block;
   width: calc(100% - 110px);
-  height: 8px;
+  height: 11px;
   background: #ddd;
-  border-radius: 4px;
+  border-radius: 3px;
   vertical-align: middle;
   position: relative;
 }
 .lang-bar-fill {
   position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  background: #4caf50;
-  border-radius: 4px;
+  width: 168px;
+  height: 11px;
+  background: #28D979;
+  border-radius: 3px;
 }
 main {
   display: flex;
@@ -119,7 +165,7 @@ section h3 {
   position: relative;
 }
 .job-card.highlight {
-  background: #4caf50;
+  background: #28D979;
   color: #fff;
 }
 .job-card.highlight .job-dates,
@@ -191,7 +237,7 @@ section h3 {
   margin-bottom: 10px;
 }
 .edu-card.highlight {
-  background: #4caf50;
+  background: #28D979;
   color: #fff;
 }
 .edu-card.highlight .edu-year,
@@ -260,3 +306,12 @@ section h3 {
     transform: scale(4);
   }
 }
+.experience-section {
+  background-color: #F0F0F0;
+  width: 411px;
+  height: 359px;
+  border-radius: 12px;
+  padding: 12px;
+  gap: 16px;
+}
+
